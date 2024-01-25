@@ -1,0 +1,17 @@
+<!-- product-list.component.html -->
+
+<h2>Product List</h2>
+<div class="filter-container">
+    <input class="filter-input" type="number" [(ngModel)]="maxPrice" placeholder="Max Price in $" />
+    <button class="filter-button" (click)="onFilterClick()">Filter</button>
+</div>
+
+<div class="product-list-container">
+    <div class="product-card" *ngFor="let product of products">
+        <h3>{{ product.name }}</h3>
+        <img [src]="product.image" alt="{{ product.name }} Image">
+        <p>{{ product.price | currency }}</p>
+        <button (click)="onAddToCart(product)">Add one</button>
+        <button (click)="onDeleteToCart(product)">delete one</button>
+    </div>
+</div>
