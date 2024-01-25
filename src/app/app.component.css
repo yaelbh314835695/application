@@ -3,9 +3,9 @@
 }
 
 .cart-product {
-    display: block;
-    padding-left: 3%;
-    width: 50%;
+    padding-left: 1%;
+    padding-right: 3%;
+    width: 60%;
 }
 
 table {

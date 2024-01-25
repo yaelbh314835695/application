@@ -299,7 +299,7 @@
     }
 </style>
 
-<h1>Welcome to the Shop!</h1>
+<h1>Welcome to the Shop App!</h1>
 <div class="app-container">
     <div class="cart-product">
         <h2>Cart</h2>
@@ -322,7 +322,7 @@
                     <td>{{ item.name }}</td>
                     <td>{{ item.price | priceFormat }}</td>
                     <td>{{ item.amount }}</td>
-                    <td>{{ item.amount*item.price }}</td>
+                    <td>{{ item.amount*item.price | number : '1.2-2'}}</td>
                 </tr>
             </tbody>
         </table>
